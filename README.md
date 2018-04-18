@@ -9,4 +9,4 @@ sudo git config credential.helper cache
 
 We need to remove the git stored file then make sure it doesnt come back!!
 
-sudo nano /root/.gitconfig, get rid of username stuff.
+sudo nano /root/.gitconfig, get rid of username stuff.!
