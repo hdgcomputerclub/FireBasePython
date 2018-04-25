@@ -9,17 +9,14 @@ def loop(minutes):
         if currentMinute < minutes:
             print("Time to do nothing")
             printLocalTime(time.time())
-            time.sleep(60)
+            time.sleep(60*currentMinute)
             currentMinute += 1
         else:
             print("Time to do something")
             currentMinute = 0
-            time.sleep(60)
+            time.sleep(60*currentMinute)
 
-print("hello world")
-
-
-# Set up a routine that runs every 15minutes
-timeInterval = 15 # thats 15 minutes
+# Set up a routine that runs every 15 minutes
+timeInterval = .1 # thats 15 minutes
 loop(timeInterval)
 
