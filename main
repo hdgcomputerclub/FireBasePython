@@ -1,1 +1,25 @@
+import time
+from timeFunctions import printLocalTime
+def loop(minutes):
+
+
+    # Here we want to keep checking every
+    currentMinute = 0
+    while 1 == 1:
+        if currentMinute < minutes:
+            print("Time to do nothing")
+            printLocalTime(time.time())
+            time.sleep(60)
+            currentMinute += 1
+        else:
+            print("Time to do something")
+            currentMinute = 0
+            time.sleep(60)
+
 print("hello world")
+
+
+# Set up a routine that runs every 15minutes
+timeInterval = 15 # thats 15 minutes
+loop(timeInterval)
+
