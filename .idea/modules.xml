@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FireBasePython.iml" filepath="$PROJECT_DIR$/.idea/FireBasePython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../website/climaedu/.idea/climaedu.iml" filepath="$PROJECT_DIR$/../../../website/climaedu/.idea/climaedu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../climaedu_website/.idea/climaedu_website.iml" filepath="$PROJECT_DIR$/../../../climaedu_website/.idea/climaedu_website.iml" />
     </modules>
   </component>
 </project>
