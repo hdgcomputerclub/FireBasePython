@@ -1,5 +1,5 @@
 import time
-from timeFunctions import printLocalTime
+from ClubTesting.timeFunctions import printLocalTime
 def loop(minutes):
 
 
