@@ -1,15 +1,21 @@
 
 import requests
-API_ENDPOINT = "https://webhook.site/63862a39-6e44-4043-a56a-f4c1c095345b"
+import json
+
+# API_ENDPOINT = "http://localhost:3000/api/saveTemperaturePost"
+API_ENDPOINT = "http://www.climaedu.com/api/saveTemperaturePost"
 
 
-def sendsensordata(temp, humidity, datetime):
+def sendsensordata(temperature, humidity, roomId):
+    headers = {'content-type': 'application/json', 'Accept': 'text/plain'}
     json_data = {
-        "humidity":humidity,
-        "temperature":temp,
-        "datetime": datetime
+        "humidity": humidity,
+        "temperature": temperature,
+        "roomId": roomId
     }
-    r = requests.post(url=API_ENDPOINT, data= json_data)
-    print(r)
+    dataoutput = json.dumps(json_data)
+    print(dataoutput)
+    r = requests.post(url=API_ENDPOINT, data=dataoutput, headers=headers).json()
+    print(r["results"])
 
 
